@@ -1,0 +1,604 @@
+18:53:52-Init computing
+18:53:54-Conditions have been changed
+18:53:54-Agents data has been updated
+18:53:54-Graphics data has been updated
+18:53:54-Start trading
+18:53:54-Client price 42coords 380 0
+18:53:54-Current seller 1 price 65 coords 0 40
+18:53:54-Animation started. Agent coords 380 0 Arr 0 40
+18:53:55-Animation finished
+18:53:55-Animation started. Agent coords 0 40 Arr 380 0
+18:53:56-Animation finished
+18:53:56-Current seller 2 price 65 coords 0 80
+18:53:56-Animation started. Agent coords 380 0 Arr 0 80
+18:53:57-Animation finished
+18:53:57-Animation started. Agent coords 0 80 Arr 380 0
+18:53:57-Animation finished
+18:53:57-Current seller 3 price 65 coords 0 120
+18:53:57-Animation started. Agent coords 380 0 Arr 0 120
+18:53:58-Animation finished
+18:53:58-Animation started. Agent coords 0 120 Arr 380 0
+18:53:59-Animation finished
+18:53:59-Current seller 0 price 65 coords 0 0
+18:53:59-Animation started. Agent coords 380 0 Arr 0 0
+18:54:00-Animation finished
+18:54:00-Animation started. Agent coords 0 0 Arr 380 0
+18:54:01-Animation finished
+18:54:01-Current seller 4 price 65 coords 0 160
+18:54:01-Animation started. Agent coords 380 0 Arr 0 160
+18:54:02-Animation finished
+18:54:02-Animation started. Agent coords 0 160 Arr 380 0
+18:54:02-Animation finished
+18:54:02-Client price 42coords 380 40
+18:54:02-Current seller 4 price 65 coords 0 160
+18:54:02-Animation started. Agent coords 380 40 Arr 0 160
+18:54:03-Animation finished
+18:54:03-Animation started. Agent coords 0 160 Arr 380 40
+18:54:04-Animation finished
+18:54:04-Current seller 0 price 65 coords 0 0
+18:54:04-Animation started. Agent coords 380 40 Arr 0 0
+18:54:05-Animation finished
+18:54:05-Animation started. Agent coords 0 0 Arr 380 40
+18:54:06-Animation finished
+18:54:06-Current seller 1 price 65 coords 0 40
+18:54:06-Animation started. Agent coords 380 40 Arr 0 40
+18:54:06-Animation finished
+18:54:06-Animation started. Agent coords 0 40 Arr 380 40
+18:54:07-Animation finished
+18:54:07-Current seller 2 price 65 coords 0 80
+18:54:07-Animation started. Agent coords 380 40 Arr 0 80
+18:54:08-Animation finished
+18:54:08-Animation started. Agent coords 0 80 Arr 380 40
+18:54:09-Animation finished
+18:54:09-Current seller 3 price 65 coords 0 120
+18:54:09-Animation started. Agent coords 380 40 Arr 0 120
+18:54:10-Animation finished
+18:54:10-Animation started. Agent coords 0 120 Arr 380 40
+18:54:10-Animation finished
+18:54:10-Client price 42coords 380 80
+18:54:10-Current seller 3 price 65 coords 0 120
+18:54:10-Animation started. Agent coords 380 80 Arr 0 120
+18:54:11-Animation finished
+18:54:11-Animation started. Agent coords 0 120 Arr 380 80
+18:54:12-Animation finished
+18:54:12-Current seller 4 price 65 coords 0 160
+18:54:12-Animation started. Agent coords 380 80 Arr 0 160
+18:54:13-Animation finished
+18:54:13-Animation started. Agent coords 0 160 Arr 380 80
+18:54:14-Animation finished
+18:54:14-Current seller 0 price 65 coords 0 0
+18:54:14-Animation started. Agent coords 380 80 Arr 0 0
+18:54:14-Animation finished
+18:54:14-Animation started. Agent coords 0 0 Arr 380 80
+18:54:15-Animation finished
+18:54:15-Current seller 2 price 65 coords 0 80
+18:54:15-Animation started. Agent coords 380 80 Arr 0 80
+18:54:16-Animation finished
+18:54:16-Animation started. Agent coords 0 80 Arr 380 80
+18:54:17-Animation finished
+18:54:17-Current seller 1 price 65 coords 0 40
+18:54:17-Animation started. Agent coords 380 80 Arr 0 40
+18:58:10-Init computing
+18:58:11-Conditions have been changed
+18:58:11-Agents data has been updated
+18:58:11-Graphics data has been updated
+18:58:11-Start trading
+18:58:11-Client price 39coords 380 0
+18:58:11-Current seller 1 price 62 coords 0 40
+18:58:11-Animation started. Agent coords 380 0 Arr 0 40
+18:58:12-Animation finished
+18:58:12-Animation started. Agent coords 0 40 Arr 380 0
+18:58:13-Animation finished
+18:58:13-Current seller 0 price 62 coords 0 0
+18:58:13-Animation started. Agent coords 380 0 Arr 0 0
+18:58:14-Animation finished
+18:58:14-Animation started. Agent coords 0 0 Arr 380 0
+18:58:14-Animation finished
+18:58:14-Current seller 4 price 62 coords 0 160
+18:58:14-Animation started. Agent coords 380 0 Arr 0 160
+18:58:15-Animation finished
+18:58:15-Animation started. Agent coords 0 160 Arr 380 0
+18:58:16-Animation finished
+18:58:16-Current seller 3 price 62 coords 0 120
+18:58:16-Animation started. Agent coords 380 0 Arr 0 120
+18:58:17-Animation finished
+18:58:17-Animation started. Agent coords 0 120 Arr 380 0
+18:58:18-Animation finished
+18:58:18-Current seller 2 price 62 coords 0 80
+18:58:18-Animation started. Agent coords 380 0 Arr 0 80
+18:58:18-Animation finished
+18:58:18-Animation started. Agent coords 0 80 Arr 380 0
+18:58:19-Animation finished
+18:58:19-Client price 39coords 380 40
+18:58:19-Current seller 4 price 62 coords 0 160
+18:58:19-Animation started. Agent coords 380 40 Arr 0 160
+18:58:20-Animation finished
+18:58:20-Animation started. Agent coords 0 160 Arr 380 40
+18:58:21-Animation finished
+18:58:21-Current seller 3 price 62 coords 0 120
+18:58:21-Animation started. Agent coords 380 40 Arr 0 120
+18:58:22-Animation finished
+18:58:22-Animation started. Agent coords 0 120 Arr 380 40
+18:58:22-Animation finished
+18:58:22-Current seller 2 price 62 coords 0 80
+18:58:22-Animation started. Agent coords 380 40 Arr 0 80
+18:58:23-Animation finished
+18:58:23-Animation started. Agent coords 0 80 Arr 380 40
+18:58:24-Animation finished
+18:58:24-Current seller 0 price 62 coords 0 0
+18:58:24-Animation started. Agent coords 380 40 Arr 0 0
+18:58:25-Animation finished
+18:58:25-Animation started. Agent coords 0 0 Arr 380 40
+18:58:26-Animation finished
+18:58:26-Current seller 1 price 62 coords 0 40
+18:58:26-Animation started. Agent coords 380 40 Arr 0 40
+18:58:26-Animation finished
+18:58:26-Animation started. Agent coords 0 40 Arr 380 40
+18:58:27-Animation finished
+18:58:27-Client price 39coords 380 80
+18:58:27-Current seller 0 price 62 coords 0 0
+18:58:27-Animation started. Agent coords 380 80 Arr 0 0
+18:59:17-Init computing
+18:59:19-Conditions have been changed
+18:59:19-Agents data has been updated
+18:59:19-Graphics data has been updated
+18:59:19-Start trading
+18:59:19-Client price 49coords 380 0
+18:59:19-Current seller 1 price 74 coords 0 40
+18:59:19-Animation started. Agent coords 380 0 Arr 0 40
+18:59:19-Animation finished
+18:59:19-Animation started. Agent coords 0 40 Arr 380 0
+18:59:20-Animation finished
+18:59:20-Current seller 3 price 74 coords 0 120
+18:59:20-Animation started. Agent coords 380 0 Arr 0 120
+18:59:21-Animation finished
+18:59:21-Animation started. Agent coords 0 120 Arr 380 0
+18:59:22-Animation finished
+18:59:22-Current seller 0 price 74 coords 0 0
+18:59:22-Animation started. Agent coords 380 0 Arr 0 0
+18:59:23-Animation finished
+18:59:23-Animation started. Agent coords 0 0 Arr 380 0
+18:59:23-Animation finished
+18:59:23-Current seller 2 price 74 coords 0 80
+18:59:23-Animation started. Agent coords 380 0 Arr 0 80
+18:59:24-Animation finished
+18:59:24-Animation started. Agent coords 0 80 Arr 380 0
+18:59:25-Animation finished
+18:59:25-Current seller 4 price 74 coords 0 160
+18:59:25-Animation started. Agent coords 380 0 Arr 0 160
+18:59:26-Animation finished
+18:59:26-Animation started. Agent coords 0 160 Arr 380 0
+18:59:27-Animation finished
+18:59:27-Client price 49coords 380 40
+18:59:27-Current seller 4 price 74 coords 0 160
+18:59:27-Animation started. Agent coords 380 40 Arr 0 160
+18:59:28-Animation finished
+18:59:28-Animation started. Agent coords 0 160 Arr 380 40
+18:59:29-Animation finished
+18:59:29-Current seller 0 price 74 coords 0 0
+18:59:29-Animation started. Agent coords 380 40 Arr 0 0
+19:22:47-Init computing
+19:22:48-Conditions have been changed
+19:22:48-Agents data has been updated
+19:22:48-Graphics data has been updated
+19:22:48-Start trading
+19:22:48-Client price 61coords 380 0
+19:22:48-Current seller 4 price 75 coords 0 160
+19:22:48-Animation started. Agent coords 380 0 Arr 0 160
+19:22:49-Animation finished
+19:22:49-Animation started. Agent coords 0 160 Arr 380 0
+19:22:50-Animation finished
+19:22:50-Current seller 1 price 71 coords 0 40
+19:22:50-Animation started. Agent coords 380 0 Arr 0 40
+19:22:50-Animation finished
+19:22:50-Animation started. Agent coords 0 40 Arr 380 0
+19:22:51-Animation finished
+19:22:51-Current seller 2 price 58 coords 0 80
+19:22:51-Animation started. Agent coords 380 0 Arr 0 80
+19:22:52-Animation finished
+19:22:52-Trade complited
+19:22:52-Animation started. Agent coords 0 80 Arr 380 0
+19:22:53-Animation finished
+19:22:53-Client price 68coords 380 40
+19:22:53-Current seller 4 price 75 coords 0 160
+19:22:53-Animation started. Agent coords 380 40 Arr 0 160
+19:22:54-Animation finished
+19:22:54-Animation started. Agent coords 0 160 Arr 380 40
+19:22:54-Animation finished
+19:22:54-Current seller 0 price 88 coords 0 0
+19:22:54-Animation started. Agent coords 380 40 Arr 0 0
+19:22:55-Animation finished
+19:22:55-Animation started. Agent coords 0 0 Arr 380 40
+19:22:56-Animation finished
+19:22:56-Current seller 2 price 58 coords 0 80
+19:22:56-Animation started. Agent coords 380 40 Arr 0 80
+19:22:57-Animation finished
+19:22:57-Trade complited
+19:22:57-Animation started. Agent coords 0 80 Arr 380 40
+19:22:57-Animation finished
+19:22:57-Client price 57coords 380 80
+19:22:57-Current seller 2 price 58 coords 0 80
+19:22:57-Animation started. Agent coords 380 80 Arr 0 80
+19:22:58-Animation finished
+19:22:58-Animation started. Agent coords 0 80 Arr 380 80
+19:22:59-Animation finished
+19:22:59-Current seller 4 price 75 coords 0 160
+19:22:59-Animation started. Agent coords 380 80 Arr 0 160
+19:23:00-Animation finished
+19:23:00-Animation started. Agent coords 0 160 Arr 380 80
+19:23:01-Animation finished
+19:23:01-Current seller 1 price 71 coords 0 40
+19:23:01-Animation started. Agent coords 380 80 Arr 0 40
+19:23:02-Animation finished
+19:23:02-Animation started. Agent coords 0 40 Arr 380 80
+19:23:03-Animation finished
+19:23:03-Current seller 0 price 88 coords 0 0
+19:23:03-Animation started. Agent coords 380 80 Arr 0 0
+19:23:42-Init computing
+19:23:43-Conditions have been changed
+19:23:43-Agents data has been updated
+19:23:43-Graphics data has been updated
+19:23:43-Start trading
+19:23:43-Client price 58coords 380 0
+19:23:43-Current seller 0 price 65 coords 0 0
+19:23:43-Animation started. Agent coords 380 0 Arr 0 0
+19:23:44-Animation finished
+19:23:44-Animation started. Agent coords 0 0 Arr 380 0
+19:23:45-Animation finished
+19:23:45-Current seller 3 price 62 coords 0 120
+19:23:45-Animation started. Agent coords 380 0 Arr 0 120
+19:23:46-Animation finished
+19:23:46-Animation started. Agent coords 0 120 Arr 380 0
+19:23:47-Animation finished
+19:23:47-Current seller 1 price 79 coords 0 40
+19:23:47-Animation started. Agent coords 380 0 Arr 0 40
+19:23:47-Animation finished
+19:23:47-Animation started. Agent coords 0 40 Arr 380 0
+19:23:48-Animation finished
+19:23:48-Current seller 2 price 55 coords 0 80
+19:23:48-Animation started. Agent coords 380 0 Arr 0 80
+19:23:49-Animation finished
+19:23:49-Trade complited
+19:23:49-Animation started. Agent coords 0 80 Arr 380 0
+19:23:50-Animation finished
+19:23:50-Client price 36coords 380 40
+19:23:50-Current seller 4 price 65 coords 0 160
+19:23:50-Animation started. Agent coords 380 40 Arr 0 160
+19:23:51-Animation finished
+19:23:51-Animation started. Agent coords 0 160 Arr 380 40
+19:23:51-Animation finished
+19:23:51-Current seller 2 price 55 coords 0 80
+19:23:51-Animation started. Agent coords 380 40 Arr 0 80
+19:23:52-Animation finished
+19:23:52-Animation started. Agent coords 0 80 Arr 380 40
+19:23:53-Animation finished
+19:23:53-Current seller 0 price 65 coords 0 0
+19:23:53-Animation started. Agent coords 380 40 Arr 0 0
+19:23:54-Animation finished
+19:23:54-Animation started. Agent coords 0 0 Arr 380 40
+19:23:55-Animation finished
+19:23:55-Current seller 1 price 79 coords 0 40
+19:23:55-Animation started. Agent coords 380 40 Arr 0 40
+19:23:55-Animation finished
+19:23:55-Animation started. Agent coords 0 40 Arr 380 40
+19:23:56-Animation finished
+19:23:56-Current seller 3 price 62 coords 0 120
+19:23:56-Animation started. Agent coords 380 40 Arr 0 120
+19:23:57-Animation finished
+19:23:57-Animation started. Agent coords 0 120 Arr 380 40
+19:23:58-Animation finished
+19:23:58-Client price 42coords 380 80
+19:23:58-Current seller 2 price 55 coords 0 80
+19:23:58-Animation started. Agent coords 380 80 Arr 0 80
+19:23:59-Animation finished
+19:23:59-Animation started. Agent coords 0 80 Arr 380 80
+19:23:59-Animation finished
+19:23:59-Current seller 4 price 65 coords 0 160
+19:23:59-Animation started. Agent coords 380 80 Arr 0 160
+19:24:00-Animation finished
+19:24:00-Animation started. Agent coords 0 160 Arr 380 80
+19:24:01-Animation finished
+19:24:01-Current seller 3 price 62 coords 0 120
+19:24:01-Animation started. Agent coords 380 80 Arr 0 120
+19:24:02-Animation finished
+19:24:02-Animation started. Agent coords 0 120 Arr 380 80
+19:24:03-Animation finished
+19:24:03-Current seller 1 price 79 coords 0 40
+19:24:03-Animation started. Agent coords 380 80 Arr 0 40
+19:24:03-Animation finished
+19:24:03-Animation started. Agent coords 0 40 Arr 380 80
+19:24:04-Animation finished
+19:24:04-Current seller 0 price 65 coords 0 0
+19:24:04-Animation started. Agent coords 380 80 Arr 0 0
+19:24:05-Animation finished
+19:24:05-Animation started. Agent coords 0 0 Arr 380 80
+19:24:06-Animation finished
+19:24:06-Client price 65coords 380 120
+19:24:06-Current seller 4 price 65 coords 0 160
+19:24:06-Animation started. Agent coords 380 120 Arr 0 160
+19:24:07-Animation finished
+19:24:07-Animation started. Agent coords 0 160 Arr 380 120
+19:24:07-Animation finished
+19:24:07-Current seller 1 price 79 coords 0 40
+19:24:07-Animation started. Agent coords 380 120 Arr 0 40
+19:24:08-Animation finished
+19:24:08-Animation started. Agent coords 0 40 Arr 380 120
+19:24:09-Animation finished
+19:24:09-Current seller 2 price 55 coords 0 80
+19:24:09-Animation started. Agent coords 380 120 Arr 0 80
+19:24:10-Animation finished
+19:24:10-Animation started. Agent coords 0 80 Arr 380 120
+19:24:11-Animation finished
+19:24:11-Current seller 3 price 62 coords 0 120
+19:24:11-Animation started. Agent coords 380 120 Arr 0 120
+19:24:11-Animation finished
+19:24:11-Trade complited
+19:24:11-Animation started. Agent coords 0 120 Arr 380 120
+19:24:12-Animation finished
+19:24:12-Client price 63coords 380 160
+19:24:12-Current seller 3 price 62 coords 0 120
+19:24:12-Animation started. Agent coords 380 160 Arr 0 120
+19:24:13-Animation finished
+19:24:13-Animation started. Agent coords 0 120 Arr 380 160
+19:24:14-Animation finished
+19:24:14-Current seller 4 price 65 coords 0 160
+19:24:14-Animation started. Agent coords 380 160 Arr 0 160
+19:24:15-Animation finished
+19:24:15-Animation started. Agent coords 0 160 Arr 380 160
+19:24:15-Animation finished
+19:24:15-Current seller 2 price 55 coords 0 80
+19:24:15-Animation started. Agent coords 380 160 Arr 0 80
+19:24:16-Animation finished
+19:24:16-Animation started. Agent coords 0 80 Arr 380 160
+19:24:17-Animation finished
+19:24:17-Current seller 0 price 65 coords 0 0
+19:24:17-Animation started. Agent coords 380 160 Arr 0 0
+19:24:18-Animation finished
+19:24:18-Animation started. Agent coords 0 0 Arr 380 160
+19:24:19-Animation finished
+19:24:19-Current seller 1 price 79 coords 0 40
+19:24:19-Animation started. Agent coords 380 160 Arr 0 40
+19:24:19-Animation finished
+19:24:19-Animation started. Agent coords 0 40 Arr 380 160
+19:24:20-Animation finished
+19:24:20-Day starteed
+20:07:27-Init computing
+20:07:29-Conditions have been changed
+20:07:29-Agents data has been updated
+20:07:29-Graphics data has been updated
+20:07:29-Start trading
+20:07:29-Client price 41coords 380 0
+20:07:29-Current seller 4 price 57 coords 0 160
+20:07:29-Animation started. Agent coords 380 0 Arr 0 160
+20:07:30-Animation finished
+20:07:30-Animation started. Agent coords 0 160 Arr 380 0
+20:07:30-Animation finished
+20:07:30-Current seller 1 price 78 coords 0 40
+20:07:30-Animation started. Agent coords 380 0 Arr 0 40
+20:07:31-Animation finished
+20:07:31-Animation started. Agent coords 0 40 Arr 380 0
+20:07:32-Animation finished
+20:07:32-Current seller 0 price 50 coords 0 0
+20:07:32-Animation started. Agent coords 380 0 Arr 0 0
+20:07:33-Animation finished
+20:07:33-Animation started. Agent coords 0 0 Arr 380 0
+20:07:34-Animation finished
+20:07:38-Current seller 3 price 65 coords 0 120
+20:07:38-Animation started. Agent coords 380 0 Arr 0 120
+20:07:39-Animation finished
+20:07:39-Animation started. Agent coords 0 120 Arr 380 0
+20:07:39-Animation finished
+20:07:39-Current seller 2 price 53 coords 0 80
+20:07:40-Animation started. Agent coords 380 0 Arr 0 80
+20:07:41-Animation finished
+20:07:41-Animation started. Agent coords 0 80 Arr 380 0
+20:07:42-Animation finished
+20:07:42-Client price 31coords 380 40
+20:07:42-Current seller 0 price 50 coords 0 0
+20:07:42-Animation started. Agent coords 380 40 Arr 0 0
+20:07:43-Animation finished
+20:07:43-Animation started. Agent coords 0 0 Arr 380 40
+20:07:44-Animation finished
+20:07:44-Current seller 1 price 78 coords 0 40
+20:07:44-Animation started. Agent coords 380 40 Arr 0 40
+20:07:45-Animation finished
+20:07:45-Animation started. Agent coords 0 40 Arr 380 40
+20:07:46-Animation finished
+20:07:46-Current seller 4 price 57 coords 0 160
+20:07:46-Animation started. Agent coords 380 40 Arr 0 160
+20:07:47-Animation finished
+20:07:47-Animation started. Agent coords 0 160 Arr 380 40
+20:07:48-Animation finished
+20:07:48-Current seller 3 price 65 coords 0 120
+20:07:48-Animation started. Agent coords 380 40 Arr 0 120
+20:07:49-Animation finished
+20:07:49-Animation started. Agent coords 0 120 Arr 380 40
+20:07:50-Animation finished
+20:07:50-Current seller 2 price 53 coords 0 80
+20:07:50-Animation started. Agent coords 380 40 Arr 0 80
+20:07:50-Animation finished
+20:07:50-Animation started. Agent coords 0 80 Arr 380 40
+20:07:51-Animation finished
+20:07:51-Client price 59coords 380 80
+20:07:51-Current seller 3 price 65 coords 0 120
+20:07:51-Animation started. Agent coords 380 80 Arr 0 120
+20:07:52-Animation finished
+20:07:52-Animation started. Agent coords 0 120 Arr 380 80
+20:07:53-Animation finished
+20:07:53-Current seller 4 price 57 coords 0 160
+20:07:53-Animation started. Agent coords 380 80 Arr 0 160
+20:07:54-Animation finished
+20:07:54-Trade complited
+20:07:54-Animation started. Agent coords 0 160 Arr 380 80
+20:07:55-Animation finished
+20:07:55-Client price 53coords 380 120
+20:07:55-Current seller 4 price 57 coords 0 160
+20:07:55-Animation started. Agent coords 380 120 Arr 0 160
+20:07:55-Animation finished
+20:07:55-Animation started. Agent coords 0 160 Arr 380 120
+20:07:56-Animation finished
+20:07:56-Current seller 3 price 65 coords 0 120
+20:07:56-Animation started. Agent coords 380 120 Arr 0 120
+20:07:57-Animation finished
+20:07:57-Animation started. Agent coords 0 120 Arr 380 120
+20:07:58-Animation finished
+20:07:58-Current seller 2 price 53 coords 0 80
+20:07:58-Animation started. Agent coords 380 120 Arr 0 80
+20:07:59-Animation finished
+20:07:59-Animation started. Agent coords 0 80 Arr 380 120
+20:08:00-Animation finished
+20:08:00-Current seller 0 price 50 coords 0 0
+20:08:00-Animation started. Agent coords 380 120 Arr 0 0
+20:08:01-Animation finished
+20:08:01-Trade complited
+20:08:01-Animation started. Agent coords 0 0 Arr 380 120
+20:08:02-Animation finished
+20:08:02-Client price 57coords 380 160
+20:08:02-Current seller 3 price 65 coords 0 120
+20:08:02-Animation started. Agent coords 380 160 Arr 0 120
+20:08:03-Animation finished
+20:08:03-Animation started. Agent coords 0 120 Arr 380 160
+20:08:04-Animation finished
+20:08:04-Current seller 2 price 53 coords 0 80
+20:08:04-Animation started. Agent coords 380 160 Arr 0 80
+20:08:05-Animation finished
+20:08:05-Trade complited
+20:08:05-Animation started. Agent coords 0 80 Arr 380 160
+20:08:06-Animation finished
+20:08:06-Day started
+20:10:35-Init computing
+20:10:36-Conditions have been changed
+20:10:36-Agents data has been updated
+20:10:36-Graphics data has been updated
+20:10:36-Start trading
+20:10:36-Client price 35coords 380 0
+20:10:36-Current seller 1 price 78 coords 0 40
+20:10:36-Animation started. Agent coords 380 0 Arr 0 40
+20:10:36-Animation finished
+20:10:36-Animation started. Agent coords 0 40 Arr 380 0
+20:10:37-Animation finished
+20:10:37-Current seller 2 price 65 coords 0 80
+20:10:37-Animation started. Agent coords 380 0 Arr 0 80
+20:10:37-Animation finished
+20:10:37-Animation started. Agent coords 0 80 Arr 380 0
+20:10:37-Animation finished
+20:10:37-Current seller 0 price 88 coords 0 0
+20:10:37-Animation started. Agent coords 380 0 Arr 0 0
+20:10:38-Animation finished
+20:10:38-Animation started. Agent coords 0 0 Arr 380 0
+20:10:38-Animation finished
+20:10:38-Current seller 3 price 92 coords 0 120
+20:10:38-Animation started. Agent coords 380 0 Arr 0 120
+20:10:39-Animation finished
+20:10:39-Animation started. Agent coords 0 120 Arr 380 0
+20:10:39-Animation finished
+20:10:39-Current seller 4 price 86 coords 0 160
+20:10:39-Animation started. Agent coords 380 0 Arr 0 160
+20:10:40-Animation finished
+20:10:40-Animation started. Agent coords 0 160 Arr 380 0
+20:10:40-Animation finished
+20:10:40-Client price 56coords 380 40
+20:10:40-Current seller 3 price 92 coords 0 120
+20:10:40-Animation started. Agent coords 380 40 Arr 0 120
+20:10:40-Animation finished
+20:10:40-Animation started. Agent coords 0 120 Arr 380 40
+20:10:41-Animation finished
+20:10:41-Current seller 1 price 78 coords 0 40
+20:10:41-Animation started. Agent coords 380 40 Arr 0 40
+20:10:41-Animation finished
+20:10:41-Animation started. Agent coords 0 40 Arr 380 40
+20:10:42-Animation finished
+20:10:42-Current seller 0 price 88 coords 0 0
+20:10:42-Animation started. Agent coords 380 40 Arr 0 0
+20:10:42-Animation finished
+20:10:42-Animation started. Agent coords 0 0 Arr 380 40
+20:10:42-Animation finished
+20:10:42-Current seller 2 price 65 coords 0 80
+20:10:42-Animation started. Agent coords 380 40 Arr 0 80
+20:10:43-Animation finished
+20:10:43-Animation started. Agent coords 0 80 Arr 380 40
+20:10:43-Animation finished
+20:10:43-Current seller 4 price 86 coords 0 160
+20:10:43-Animation started. Agent coords 380 40 Arr 0 160
+20:10:44-Animation finished
+20:10:44-Animation started. Agent coords 0 160 Arr 380 40
+20:10:44-Animation finished
+20:10:44-Client price 52coords 380 80
+20:10:44-Current seller 2 price 65 coords 0 80
+20:10:44-Animation started. Agent coords 380 80 Arr 0 80
+20:10:45-Animation finished
+20:10:45-Animation started. Agent coords 0 80 Arr 380 80
+20:10:45-Animation finished
+20:10:45-Current seller 4 price 86 coords 0 160
+20:10:45-Animation started. Agent coords 380 80 Arr 0 160
+20:10:45-Animation finished
+20:10:45-Animation started. Agent coords 0 160 Arr 380 80
+20:10:46-Animation finished
+20:10:46-Current seller 1 price 78 coords 0 40
+20:10:46-Animation started. Agent coords 380 80 Arr 0 40
+20:10:46-Animation finished
+20:10:46-Animation started. Agent coords 0 40 Arr 380 80
+20:10:47-Animation finished
+20:10:47-Current seller 0 price 88 coords 0 0
+20:10:47-Animation started. Agent coords 380 80 Arr 0 0
+20:10:47-Animation finished
+20:10:47-Animation started. Agent coords 0 0 Arr 380 80
+20:10:48-Animation finished
+20:10:48-Current seller 3 price 92 coords 0 120
+20:10:48-Animation started. Agent coords 380 80 Arr 0 120
+20:10:48-Animation finished
+20:10:48-Animation started. Agent coords 0 120 Arr 380 80
+20:10:48-Animation finished
+20:10:48-Client price 48coords 380 120
+20:10:48-Current seller 2 price 65 coords 0 80
+20:10:48-Animation started. Agent coords 380 120 Arr 0 80
+20:10:49-Animation finished
+20:10:49-Animation started. Agent coords 0 80 Arr 380 120
+20:10:49-Animation finished
+20:10:49-Current seller 3 price 92 coords 0 120
+20:10:49-Animation started. Agent coords 380 120 Arr 0 120
+20:10:50-Animation finished
+20:10:50-Animation started. Agent coords 0 120 Arr 380 120
+20:10:50-Animation finished
+20:10:50-Current seller 0 price 88 coords 0 0
+20:10:50-Animation started. Agent coords 380 120 Arr 0 0
+20:10:50-Animation finished
+20:10:50-Animation started. Agent coords 0 0 Arr 380 120
+20:10:51-Animation finished
+20:10:51-Current seller 4 price 86 coords 0 160
+20:10:51-Animation started. Agent coords 380 120 Arr 0 160
+20:10:51-Animation finished
+20:10:51-Animation started. Agent coords 0 160 Arr 380 120
+20:10:52-Animation finished
+20:10:52-Current seller 1 price 78 coords 0 40
+20:10:52-Animation started. Agent coords 380 120 Arr 0 40
+20:10:52-Animation finished
+20:10:52-Animation started. Agent coords 0 40 Arr 380 120
+20:10:53-Animation finished
+20:10:53-Client price 51coords 380 160
+20:10:53-Current seller 1 price 78 coords 0 40
+20:10:53-Animation started. Agent coords 380 160 Arr 0 40
+20:10:53-Animation finished
+20:10:53-Animation started. Agent coords 0 40 Arr 380 160
+20:10:53-Animation finished
+20:10:53-Current seller 0 price 88 coords 0 0
+20:10:53-Animation started. Agent coords 380 160 Arr 0 0
+20:10:54-Animation finished
+20:10:54-Animation started. Agent coords 0 0 Arr 380 160
+20:10:54-Animation finished
+20:10:54-Current seller 2 price 65 coords 0 80
+20:10:54-Animation started. Agent coords 380 160 Arr 0 80
+20:10:55-Animation finished
+20:10:55-Animation started. Agent coords 0 80 Arr 380 160
+20:10:55-Animation finished
+20:10:55-Current seller 4 price 86 coords 0 160
+20:10:55-Animation started. Agent coords 380 160 Arr 0 160
+20:10:55-Animation finished
+20:10:55-Animation started. Agent coords 0 160 Arr 380 160
+20:10:56-Animation finished
+20:10:56-Current seller 3 price 92 coords 0 120
+20:10:56-Animation started. Agent coords 380 160 Arr 0 120
+20:10:56-Animation finished
+20:10:56-Animation started. Agent coords 0 120 Arr 380 160
+20:10:57-Animation finished
+20:10:57-Day started

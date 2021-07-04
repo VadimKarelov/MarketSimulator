@@ -19,11 +19,10 @@ namespace MarketSimulator
         public int Price { get; set; }        
         private int dPrice = 1;
 
-        public Seller()
+        public Seller(Random seed)
         {
-            Random rn = new Random();
             HasProduct = true;
-            Price = rn.Next(50, 100);
+            Price = seed.Next(50, 100);
         }
 
         // seller need to change price
@@ -40,11 +39,10 @@ namespace MarketSimulator
     {
         public int MaxPrice {get; set;}
 
-        public Client()
+        public Client(Random seed)
         {
-            Random rn = new Random();
             HasProduct = false;
-            MaxPrice = rn.Next(30, 70);
+            MaxPrice = seed.Next(30, 70);
         }
     }
 }
