@@ -27,14 +27,14 @@ namespace MarketSimulator
     /// </summary>
     public partial class MainWindow : Window
     {
-        private bool isDayRunning = false;
-
         // timers for drawing
         private DispatcherTimer timerDraw;
-        private DispatcherTimer timerGraph;
 
         // simulation class
         Computing sim;
+
+        // thread for computing
+        Thread thread;
 
         public MainWindow()
         {
@@ -44,18 +44,45 @@ namespace MarketSimulator
                 int.Parse(image_SimulatorArea.Height.ToString()),
                 int.Parse(label_ClientsCounter.Content.ToString()),
                 int.Parse(label_ClientsCounter.Content.ToString()));
-            
+
+            thread = new Thread(new ThreadStart(sim.StartDay));
+
             // timer for drawing
             timerDraw = new DispatcherTimer();
             timerDraw.Interval = System.TimeSpan.FromMilliseconds(10);
-            timerDraw.Tick += DrawField;
+            timerDraw.Tick += UpdateUi;
             timerDraw.Start();
+        }
 
-            // timer for graphics
-            timerGraph = new DispatcherTimer();
-            timerGraph.Interval = System.TimeSpan.FromMilliseconds(10);
-            timerGraph.Tick += DrawGraphics;
-            timerGraph.Start();
+        private void CheckThreadState()
+        {
+            if (thread != null && button_Pause != null)
+            {
+                // day is running and user want to stop it
+                if (thread.IsAlive && button_Pause.Content.ToString() == "Старт")
+                {
+                    label_Warning.Content = "Ждите окончания дня";
+                }
+                // day is running and user dont want to stop simulation
+                else if (thread.IsAlive && button_Pause.Content.ToString() == "Пауза")
+                {
+                    label_Warning.Content = "Симуляция запущена";
+                }
+                // day isnt running but user want to continue simulation
+                else if (!thread.IsAlive && button_Pause.Content.ToString() == "Пауза")
+                {
+                    // start new day
+                    thread = new Thread(new ThreadStart(sim.StartDay));
+                    thread.Start();
+
+                    // update day counter
+                    label_Day.Content = "День: " + sim.GetNumberOfDays();
+                }
+                else
+                {
+                    label_Warning.Content = "Симуляция остановлена";
+                }
+            }
         }
 
         // ==== event part ====
@@ -68,18 +95,48 @@ namespace MarketSimulator
                 slider_Clients.Value = Math.Round(slider_Clients.Value);
                 label_SellersCounter.Content = slider_Sellers.Value.ToString();
                 label_ClientsCounter.Content = slider_Clients.Value.ToString();
+
+                if (sim != null)
+                {
+                    sim.ChangeNumberOfAgents((int)slider_Sellers.Value, (int)slider_Clients.Value);
+                }
             }
         }
 
         private void ButtonPauseClicked(object sender, RoutedEventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(sim.StartDay));
-            thread.Start();
+            // change button text
+            if (button_Pause.Content.ToString() == "Старт")
+            {
+                button_Pause.Content = "Пауза";
+            }
+            else
+            {
+                button_Pause.Content = "Старт";
+            }
+
+            // start day if previous day end
+            if (thread != null && !thread.IsAlive)
+            {
+                // start new day
+                thread = new Thread(new ThreadStart(sim.StartDay));
+                thread.Start();
+
+                // update day counter
+                label_Day.Content = "День: " + sim.GetNumberOfDays();
+            }
         }
 
         // ==== drawing part ====
         // updating ui
-        private void DrawField(object sender, EventArgs e)
+        private void UpdateUi(object sender, EventArgs e)
+        {
+            DrawField();
+            DrawGraphics();
+            CheckThreadState();
+        }
+
+        private void DrawField()
         {
             // lists of agents
             var sellers = sim.GetSellersList();
@@ -124,32 +181,43 @@ namespace MarketSimulator
             image_SimulatorArea.Source = Bitmap2BitmapImage(btmp);
         }
 
-        private void DrawGraphics(object sender, EventArgs e)
+        private void DrawGraphics()
         {
             // lists of graphics
             var graphicAverage = sim.GetAverageGraphic();
             var graphicMax = sim.GetMaxGraphic();
 
-            var btmpAverage = new Bitmap(int.Parse(image_GraphicAverage.Width.ToString()), int.Parse(image_GraphicAverage.Height.ToString()));
-            var btmpMax = new Bitmap(int.Parse(image_GraphicMaxPrice.Width.ToString()), int.Parse(image_GraphicMaxPrice.Height.ToString()));
-            var grA = Graphics.FromImage(btmpAverage);
-            var grM = Graphics.FromImage(btmpMax);
-
-            //UpdateGraphics();
+            int step = 10;
+            int scale = 2;
 
             if (graphicAverage.Count > 1)
             {
+                // prepare bitmaps
+                var btmpAverage = new Bitmap(int.Parse(image_GraphicAverage.Width.ToString()), int.Parse(image_GraphicAverage.Height.ToString()));
+                var btmpMax = new Bitmap(int.Parse(image_GraphicMaxPrice.Width.ToString()), int.Parse(image_GraphicMaxPrice.Height.ToString()));
+                var grA = Graphics.FromImage(btmpAverage);
+                var grM = Graphics.FromImage(btmpMax);
+
+                // white background
+                grA.Clear(System.Drawing.Color.White);
+                grM.Clear(System.Drawing.Color.White);
+
                 for (int i = 0; i < graphicAverage.Count - 1; i++)
                 {
-                    grA.DrawLine(new System.Drawing.Pen(System.Drawing.Color.Blue), 10 * i, btmpAverage.Height - graphicAverage[i] * 10,
-                        10 * (i + 1), btmpAverage.Height - graphicAverage[i + 1] * 10);
-                    grM.DrawLine(new System.Drawing.Pen(System.Drawing.Color.DarkGreen), 10 * i, btmpAverage.Height - graphicMax[i] * 10,
-                        10 * (i + 1), btmpAverage.Height - graphicMax[i + 1] * 10);
+                    grA.DrawLine(new System.Drawing.Pen(System.Drawing.Color.Blue), step * i, btmpAverage.Height - graphicAverage[i] * scale,
+                        step * (i + 1), btmpAverage.Height - graphicAverage[i + 1] * scale);
+                    grM.DrawLine(new System.Drawing.Pen(System.Drawing.Color.DarkGreen), step * i, btmpAverage.Height - graphicMax[i] * scale,
+                        step * (i + 1), btmpAverage.Height - graphicMax[i + 1] * scale);
                 }
-            }
 
-            image_GraphicAverage.Source = Bitmap2BitmapImage(btmpAverage);
-            image_GraphicMaxPrice.Source = Bitmap2BitmapImage(btmpMax);
+                // set result to images
+                image_GraphicAverage.Source = Bitmap2BitmapImage(btmpAverage);
+                image_GraphicMaxPrice.Source = Bitmap2BitmapImage(btmpMax);
+
+                // set result to labels
+                label_Average.Content = "Средняя цена товара: " + graphicAverage[graphicAverage.Count - 1];
+                label_MaxPrice.Content = "Максимальная цена товара: " + graphicMax[graphicMax.Count - 1];
+            }
         }
 
         // ==== extra methods ====

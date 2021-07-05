@@ -22,7 +22,7 @@ namespace MarketSimulator
         public Seller(Random seed)
         {
             HasProduct = true;
-            Price = seed.Next(50, 100);
+            Price = seed.Next(10, 100);
         }
 
         // seller need to change price
@@ -42,7 +42,7 @@ namespace MarketSimulator
         public Client(Random seed)
         {
             HasProduct = false;
-            MaxPrice = seed.Next(30, 70);
+            MaxPrice = seed.Next(50, 100);
         }
     }
 }

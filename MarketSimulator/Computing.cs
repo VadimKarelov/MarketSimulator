@@ -27,7 +27,9 @@ namespace MarketSimulator
         private int numberOfClients;
 
         // extra
-        Random rn = new Random();
+        private Random rn = new Random();
+        private bool IsSimulationRunning = false;
+        private int NumberOfDays = 1;
 
         // ==== methods ====
         public Computing(int w, int h, int nSellers, int nClients)
@@ -49,13 +51,19 @@ namespace MarketSimulator
         // just start day
         public void StartDay()
         {
-            // start simulation
-            SimulateDay();
+            // extra check for avoid double start
+            if (!IsSimulationRunning)
+            {
+                NumberOfDays++;
+                SimulateDay();
+            }
         }
 
         // method contain actions for one day
         private void SimulateDay()
         {
+            IsSimulationRunning = true;
+
             // need update, if user change number of agents
             ChangeConditions();
 
@@ -70,6 +78,8 @@ namespace MarketSimulator
 
             // finish day with changing prices
             UpdateSellersPrices();
+
+            IsSimulationRunning = false;
         }
 
         //check number of sellers and clients
@@ -213,7 +223,7 @@ namespace MarketSimulator
             }
         }
 
-        // ==== methods to return actual lists ====
+        // ==== methods to get actual lists ====
         public List<Seller> GetSellersList()
         {
             return sellers;
@@ -232,6 +242,17 @@ namespace MarketSimulator
         public List<int> GetMaxGraphic()
         {
             return graphicMax;
+        }
+
+        // ==== methods for get simulation state
+        public bool IsRunning()
+        {
+            return IsSimulationRunning;
+        }
+
+        public int GetNumberOfDays()
+        {
+            return NumberOfDays;
         }
     }
 }
