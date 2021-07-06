@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace MarketSimulator
 {
@@ -25,6 +21,7 @@ namespace MarketSimulator
         // simulation parameters
         private int numberOfSellers;
         private int numberOfClients;
+        private int speed = 1;
 
         // extra
         private Random rn = new Random();
@@ -46,6 +43,11 @@ namespace MarketSimulator
         {
             numberOfClients = nClients;
             numberOfSellers = nSellers;
+        }
+
+        public void SetSpeed(int n)
+        {
+            speed = n;
         }
 
         // just start day
@@ -136,6 +138,7 @@ namespace MarketSimulator
                 graphicAverage.Add(average);
                 graphicMax.Add(max);
 
+                // delete old record in case of maximum elements on graphic
                 if (graphicAverage.Count > 40)
                     graphicAverage.RemoveAt(0);
                 if (graphicMax.Count > 40)
@@ -148,13 +151,12 @@ namespace MarketSimulator
             for (int i = 0; i < clients.Count; i++)
             {
                 Client currentClient = clients[i];
-                Random rn = new Random();
 
                 // need to remember start position of client
                 int startX = currentClient.X;
                 int startY = currentClient.Y;
 
-                // remember index of sellers who has been visited
+                // remember index of seller who has been visited
                 List<int> visited = new List<int>();
 
                 while (!currentClient.HasProduct && visited.Count < sellers.Count)
@@ -166,9 +168,10 @@ namespace MarketSimulator
                         ind = rn.Next(0, sellers.Count);
                     }
 
-                    // remeber seller
+                    // remember seller
                     visited.Add(ind);
 
+                    // go to seller
                     Animation(ref currentClient, sellers[ind].X, sellers[ind].Y);
 
                     // deal (trade)
@@ -177,9 +180,10 @@ namespace MarketSimulator
                         currentClient.HasProduct = true;
                         sellers[ind].HasProduct = false;
                     }
-
-                    Animation(ref currentClient, startX, startY);
                 }
+
+                // go back
+                Animation(ref currentClient, startX, startY);
             }
         }
 
@@ -192,11 +196,11 @@ namespace MarketSimulator
                 int dy = CountDelta(arrY, agent.Y);
                 agent.X += dx;
                 agent.Y += dy;
-                Thread.Sleep(5);
+                Thread.Sleep(10 / speed);
             }
         }
 
-        // needs to animation
+        // needs to animation to choose movement direction
         private int CountDelta(int n1, int n2)
         {
             int m = 5;

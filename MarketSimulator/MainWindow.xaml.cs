@@ -1,23 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Interop;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace MarketSimulator
@@ -86,7 +73,7 @@ namespace MarketSimulator
         }
 
         // ==== event part ====
-        private void SliderValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void SliderNumber_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             // update info on labels
             if (slider_Clients != null)
@@ -100,6 +87,15 @@ namespace MarketSimulator
                 {
                     sim.ChangeNumberOfAgents((int)slider_Sellers.Value, (int)slider_Clients.Value);
                 }
+            }
+        }
+
+        private void SliderSpeed_ValueCahnges(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (sim != null)
+            {
+                slider_Speed.Value = (int)Math.Round(slider_Speed.Value);
+                sim.SetSpeed((int)slider_Speed.Value);
             }
         }
 
@@ -134,6 +130,7 @@ namespace MarketSimulator
             DrawField();
             DrawGraphics();
             CheckThreadState();
+            UpdateLists();
         }
 
         private void DrawField()
@@ -218,6 +215,28 @@ namespace MarketSimulator
                 label_Average.Content = "Средняя цена товара: " + graphicAverage[graphicAverage.Count - 1];
                 label_MaxPrice.Content = "Максимальная цена товара: " + graphicMax[graphicMax.Count - 1];
             }
+        }
+
+        private void UpdateLists()
+        {
+            var sellers = sim.GetSellersList();
+            var clients = sim.GetClientsList();
+
+            string listOfSellers = "Список продавцов:";
+            string listOfClients = "Список покупателей:";
+
+            for (int i = 0; i < sellers.Count; i++)
+            {
+                listOfSellers += "\nПродавец " + (i + 1).ToString() + ", цена: " + sellers[i].Price;
+            }
+
+            for (int i = 0; i < clients.Count; i++)
+            {
+                listOfClients += "\nПокупатель " + (i + 1).ToString() + ", max цена: " + clients[i].MaxPrice;
+            }
+
+            label_ListOfSellers.Content = listOfSellers;
+            label_ListOfClients.Content = listOfClients;
         }
 
         // ==== extra methods ====

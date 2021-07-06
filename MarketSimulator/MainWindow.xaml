@@ -12,14 +12,26 @@
         <Label x:Name="label_MaxPrice" Content="Максимальная цена: 0" HorizontalAlignment="Left" Margin="410,420,0,0" VerticalAlignment="Top"/>
         <Image x:Name="image_GraphicAverage" HorizontalAlignment="Left" Height="200" Margin="0,460,0,0" VerticalAlignment="Top" Width="400"/>
         <Image x:Name="image_GraphicMaxPrice" HorizontalAlignment="Left" Height="200" Margin="410,460,0,0" VerticalAlignment="Top" Width="400"/>
+
         <Label x:Name="label_Day" Content="День: 0" HorizontalAlignment="Left" Margin="420,20,0,0" VerticalAlignment="Top"/>
+
         <Button x:Name="button_Pause" Content="Старт" HorizontalAlignment="Left" Margin="520,25,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPauseClicked"/>
-        <Label x:Name="label_Sellers" Content="Продавцы" HorizontalAlignment="Left" Margin="420,120,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Clients" Content="Покупатели" HorizontalAlignment="Left" Margin="420,160,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_SellersCounter" Content="1" HorizontalAlignment="Left" Margin="550,120,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_ClientsCounter" Content="1" HorizontalAlignment="Left" Margin="550,160,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="slider_Sellers" HorizontalAlignment="Left" Margin="600,132,0,0" VerticalAlignment="Top" Value="5" Minimum="1" Width="100" ValueChanged="SliderValueChanged"/>
-        <Slider x:Name="slider_Clients" HorizontalAlignment="Left" Margin="600,172,0,0" VerticalAlignment="Top" Value="5" Minimum="1" Width="100" ValueChanged="SliderValueChanged"/>
+
+        <Label x:Name="label_Sellers" Content="Продавцы" HorizontalAlignment="Left" Margin="420,70,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Clients" Content="Покупатели" HorizontalAlignment="Left" Margin="420,100,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="label_SellersCounter" Content="1" HorizontalAlignment="Left" Margin="550,70,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_ClientsCounter" Content="1" HorizontalAlignment="Left" Margin="550,100,0,0" VerticalAlignment="Top"/>
+
+        <Slider x:Name="slider_Sellers" HorizontalAlignment="Left" Margin="580,82,0,0" VerticalAlignment="Top" Value="5" Minimum="1" Width="100" ValueChanged="SliderNumber_ValueChanged"/>        
+        <Slider x:Name="slider_Clients" HorizontalAlignment="Left" Margin="580,112,0,0" VerticalAlignment="Top" Value="5" Minimum="1" Width="100" ValueChanged="SliderNumber_ValueChanged"/>
+
         <Label x:Name="label_Warning" Content="Симуляция остановлена" HorizontalAlignment="Left" Margin="600,20,0,0" VerticalAlignment="Top" Background="#FFFFA200"/>
+
+        <Label x:Name="label_ListOfSellers" Content="Список продавцов:" HorizontalAlignment="Left" Margin="420,140,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="label_ListOfClients" Content="Список покупателей:" HorizontalAlignment="Left" Margin="640,140,0,0" VerticalAlignment="Top" FontSize="16"/>
+        
+        <Label x:Name="label_Speed" Content="Скорость" HorizontalAlignment="Left" Margin="730,70,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="slider_Speed" HorizontalAlignment="Left" Margin="730,112,0,0" VerticalAlignment="Top" Value="1" Minimum="1" Width="100" ValueChanged="SliderSpeed_ValueCahnges"/>
     </Grid>
 </Window>
