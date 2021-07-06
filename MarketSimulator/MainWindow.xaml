@@ -15,7 +15,7 @@
 
         <Label x:Name="label_Day" Content="День: 0" HorizontalAlignment="Left" Margin="420,20,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="button_Pause" Content="Старт" HorizontalAlignment="Left" Margin="520,25,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPauseClicked"/>
+        <Button x:Name="button_Pause" Content="Старт" HorizontalAlignment="Left" Margin="560,25,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPauseClicked"/>
 
         <Label x:Name="label_Sellers" Content="Продавцы" HorizontalAlignment="Left" Margin="420,70,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Clients" Content="Покупатели" HorizontalAlignment="Left" Margin="420,100,0,0" VerticalAlignment="Top"/>
@@ -26,7 +26,7 @@
         <Slider x:Name="slider_Sellers" HorizontalAlignment="Left" Margin="580,82,0,0" VerticalAlignment="Top" Value="5" Minimum="1" Width="100" ValueChanged="SliderNumber_ValueChanged"/>        
         <Slider x:Name="slider_Clients" HorizontalAlignment="Left" Margin="580,112,0,0" VerticalAlignment="Top" Value="5" Minimum="1" Width="100" ValueChanged="SliderNumber_ValueChanged"/>
 
-        <Label x:Name="label_Warning" Content="Симуляция остановлена" HorizontalAlignment="Left" Margin="600,20,0,0" VerticalAlignment="Top" Background="#FFFFA200"/>
+        <Label x:Name="label_Warning" Content="Симуляция остановлена" HorizontalAlignment="Left" Margin="650,20,0,0" VerticalAlignment="Top" Background="#FFFFA200"/>
 
         <Label x:Name="label_ListOfSellers" Content="Список продавцов:" HorizontalAlignment="Left" Margin="420,140,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="label_ListOfClients" Content="Список покупателей:" HorizontalAlignment="Left" Margin="640,140,0,0" VerticalAlignment="Top" FontSize="16"/>
