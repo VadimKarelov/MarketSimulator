@@ -39,6 +39,7 @@ namespace MarketSimulator
             numberOfSellers = nSellers;
         }
 
+        // ==== change simulation parameters ====
         public void ChangeNumberOfAgents(int nSellers, int nClients)
         {
             numberOfClients = nClients;
@@ -50,7 +51,25 @@ namespace MarketSimulator
             speed = n;
         }
 
-        // just start day
+        public bool ChangeAgentsParameters(int dSellersPrice, int dClientsPrice)
+        {
+            if (!IsSimulationRunning)
+            {
+                // sellers
+                for (int i = 0; i < sellers.Count; i++)
+                {
+                    sellers[i].ChangePrice(dSellersPrice);
+                }
+                // clients
+                for (int i = 0; i < clients.Count; i++)
+                {
+                    clients[i].ChangePrice(dClientsPrice);
+                }
+            }
+            return !IsSimulationRunning;
+        }
+
+        // ==== just start day =====
         public void StartDay()
         {
             // extra check for avoid double start
@@ -248,7 +267,7 @@ namespace MarketSimulator
             return graphicMax;
         }
 
-        // ==== methods for get simulation state
+        // ==== methods to get simulation state
         public bool IsRunning()
         {
             return IsSimulationRunning;

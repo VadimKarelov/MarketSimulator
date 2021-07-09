@@ -1,0 +1,15 @@
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\bin\Release\MarketSimulator.exe.config
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\bin\Release\MarketSimulator.exe
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\bin\Release\MarketSimulator.pdb
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator.csproj.AssemblyReference.cache
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MainWindow.g.cs
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\App.g.cs
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator_MarkupCompile.cache
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator_MarkupCompile.lref
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MainWindow.baml
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator.g.resources
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator.Properties.Resources.resources
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator.csproj.GenerateResource.cache
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator.csproj.CoreCompileInputs.cache
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator.exe
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\MarketSimulator.pdb

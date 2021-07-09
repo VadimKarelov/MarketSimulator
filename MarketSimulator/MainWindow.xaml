@@ -5,17 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarketSimulator"
         mc:Ignorable="d"
-        Title="Market Model" Height="700" Width="900" FontSize="20" Background="#FFDCFFC8">
+        Title="Market Model" Height="700" Width="1300" FontSize="20" Background="#FFDCFFC8">
     <Grid>
         <Image x:Name="image_SimulatorArea" HorizontalAlignment="Left" Height="400" Margin="0,0,0,0" VerticalAlignment="Top" Width="400" RenderTransformOrigin="-0.037,-0.048" Source="mandarin.jpg" Stretch="Fill"/>
         <Label x:Name="label_Average" Content="Средняя цена: 0" HorizontalAlignment="Left" Margin="0,420,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_MaxPrice" Content="Максимальная цена: 0" HorizontalAlignment="Left" Margin="410,420,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_MaxPrice" Content="Максимальная цена: 0" HorizontalAlignment="Left" Margin="440,420,0,0" VerticalAlignment="Top"/>
         <Image x:Name="image_GraphicAverage" HorizontalAlignment="Left" Height="200" Margin="0,460,0,0" VerticalAlignment="Top" Width="400"/>
-        <Image x:Name="image_GraphicMaxPrice" HorizontalAlignment="Left" Height="200" Margin="410,460,0,0" VerticalAlignment="Top" Width="400"/>
+        <Image x:Name="image_GraphicMaxPrice" HorizontalAlignment="Left" Height="200" Margin="440,460,0,0" VerticalAlignment="Top" Width="400"/>
+
+        <Label x:Name="label_0" Content="0" HorizontalAlignment="Left" Margin="410,620,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_UpperBound" Content="100" HorizontalAlignment="Left" Margin="400,460,0,0" VerticalAlignment="Top"/>
 
         <Label x:Name="label_Day" Content="День: 0" HorizontalAlignment="Left" Margin="420,20,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="button_Pause" Content="Старт" HorizontalAlignment="Left" Margin="560,25,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPauseClicked"/>
+        <Button x:Name="button_Pause" Content="Старт" HorizontalAlignment="Left" Margin="560,25,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPause_Clicked"/>
 
         <Label x:Name="label_Sellers" Content="Продавцы" HorizontalAlignment="Left" Margin="420,70,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Clients" Content="Покупатели" HorizontalAlignment="Left" Margin="420,100,0,0" VerticalAlignment="Top"/>
@@ -27,11 +30,22 @@
         <Slider x:Name="slider_Clients" HorizontalAlignment="Left" Margin="580,112,0,0" VerticalAlignment="Top" Value="5" Minimum="1" Width="100" ValueChanged="SliderNumber_ValueChanged"/>
 
         <Label x:Name="label_Warning" Content="Симуляция остановлена" HorizontalAlignment="Left" Margin="650,20,0,0" VerticalAlignment="Top" Background="#FFFFA200"/>
+        <Label x:Name="label_InfluenceWarning" Content="Требуется остановка симуляции" HorizontalAlignment="Left" Margin="910,20,0,0" VerticalAlignment="Top" Background="#FFFFA200" Width="343"/>
 
         <Label x:Name="label_ListOfSellers" Content="Список продавцов:" HorizontalAlignment="Left" Margin="420,140,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="label_ListOfClients" Content="Список покупателей:" HorizontalAlignment="Left" Margin="640,140,0,0" VerticalAlignment="Top" FontSize="16"/>
         
         <Label x:Name="label_Speed" Content="Скорость" HorizontalAlignment="Left" Margin="730,70,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="slider_Speed" HorizontalAlignment="Left" Margin="730,112,0,0" VerticalAlignment="Top" Value="1" Minimum="1" Width="100" ValueChanged="SliderSpeed_ValueCahnges"/>
+        <Slider x:Name="slider_Speed" HorizontalAlignment="Left" Margin="730,112,0,0" VerticalAlignment="Top" Value="1" Minimum="1" Width="100" ValueChanged="SliderSpeed_ValueChanged"/>
+
+        <Label x:Name="label_InfluenceOnSellers" Content="Влияние на продавцов" HorizontalAlignment="Left" Margin="910,60,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button_IncreasePrice" Content="Повышение цены" HorizontalAlignment="Left" Margin="910,100,0,0" VerticalAlignment="Top" Tag="si" Click="ButtonInfluence_Clicked"/>
+        <Button x:Name="button_DecreasePrice" Content="Снижение цены" HorizontalAlignment="Left" Margin="1100,100,0,0" VerticalAlignment="Top" Tag="sd" Click="ButtonInfluence_Clicked"/>
+
+        <Label x:Name="label_InfluenceOnClients" Content="Влияние на покупателей" HorizontalAlignment="Left" Margin="910,160,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button_IncreaseMaxPrice" Content="Повышение цены" HorizontalAlignment="Left" Margin="910,200,0,0" VerticalAlignment="Top" Tag="ci" Click="ButtonInfluence_Clicked"/>
+        <Button x:Name="button_DecreaseMaxPrice" Content="Снижение цены" HorizontalAlignment="Left" Margin="1100,200,0,0" VerticalAlignment="Top" Tag="cd" Click="ButtonInfluence_Clicked"/>
+        
+        <Rectangle HorizontalAlignment="Left" Height="212" Margin="910,20,0,0" Stroke="Black" VerticalAlignment="Top" Width="343"/>
     </Grid>
 </Window>

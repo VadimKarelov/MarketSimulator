@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Windows;
 using System.Windows.Media.Imaging;
@@ -90,7 +92,7 @@ namespace MarketSimulator
             }
         }
 
-        private void SliderSpeed_ValueCahnges(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void SliderSpeed_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             if (sim != null)
             {
@@ -99,7 +101,7 @@ namespace MarketSimulator
             }
         }
 
-        private void ButtonPauseClicked(object sender, RoutedEventArgs e)
+        private void ButtonPause_Clicked(object sender, RoutedEventArgs e)
         {
             // change button text
             if (button_Pause.Content.ToString() == "Старт")
@@ -120,6 +122,33 @@ namespace MarketSimulator
 
                 // update day counter
                 label_Day.Content = "День: " + sim.GetNumberOfDays();
+            }
+        }
+
+        private void ButtonInfluence_Clicked(object sender, RoutedEventArgs e)
+        {
+            // get info about clicked button
+            string tag = ((System.Windows.Controls.Button)sender).Tag.ToString();
+
+            int ds = 0, dc = 0;
+            int d = 5;
+
+            // get info about agent
+            if (tag[0] == 's')
+                ds = d;
+            else
+                dc = d;
+
+            // get info about delta
+            if (tag[1] == 'd')
+            {
+                ds *= -1;
+                dc *= -1;
+            }
+
+            if (!sim.ChangeAgentsParameters(ds, dc))
+            {
+                label_Warning.Content = "Нажмите пауза, чтобы изменить параметры";
             }
         }
 
@@ -184,9 +213,6 @@ namespace MarketSimulator
             var graphicAverage = sim.GetAverageGraphic();
             var graphicMax = sim.GetMaxGraphic();
 
-            int step = 10;
-            int scale = 2;
-
             if (graphicAverage.Count > 1)
             {
                 // prepare bitmaps
@@ -198,6 +224,10 @@ namespace MarketSimulator
                 // white background
                 grA.Clear(System.Drawing.Color.White);
                 grM.Clear(System.Drawing.Color.White);
+
+                // scale parameters
+                int step = 10;
+                int scale = Math.Max(1, btmpMax.Height / graphicMax.Max());
 
                 for (int i = 0; i < graphicAverage.Count - 1; i++)
                 {
@@ -214,6 +244,7 @@ namespace MarketSimulator
                 // set result to labels
                 label_Average.Content = "Средняя цена товара: " + graphicAverage[graphicAverage.Count - 1];
                 label_MaxPrice.Content = "Максимальная цена товара: " + graphicMax[graphicMax.Count - 1];
+                label_UpperBound.Content = btmpMax.Height / scale;
             }
         }
 
@@ -241,7 +272,7 @@ namespace MarketSimulator
 
         // ==== extra methods ====
         // converting bitmap to bitmapImage
-        public BitmapImage Bitmap2BitmapImage(Bitmap bitmap)
+        private BitmapImage Bitmap2BitmapImage(Bitmap bitmap)
         {
             using (var memory = new MemoryStream())
             {

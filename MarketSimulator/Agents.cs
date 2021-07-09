@@ -27,7 +27,13 @@ namespace MarketSimulator
             if (f)
                 Price += dPrice;
             else
-                Price -= dPrice;
+                ChangePrice(-dPrice);
+        }
+
+        public void ChangePrice(int d)
+        {
+            if ((d > 0 && Price < 195) || (d < 0 && Price > 10))
+                Price += d;
         }
     }
 
@@ -39,6 +45,12 @@ namespace MarketSimulator
         {
             HasProduct = false;
             MaxPrice = seed.Next(50, 100);
+        }
+
+        public void ChangePrice(int d)
+        {
+            if ((d > 0 && MaxPrice < 195) || (d < 0 && MaxPrice > 10))
+                MaxPrice += d;
         }
     }
 }
