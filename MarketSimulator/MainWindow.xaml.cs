@@ -148,8 +148,19 @@ namespace MarketSimulator
 
             if (!sim.ChangeAgentsParameters(ds, dc))
             {
-                label_Warning.Content = "Нажмите пауза, чтобы изменить параметры";
+                //
             }
+        }
+
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            HelpWindow w = new HelpWindow();
+            w.Show();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            thread.Abort();
         }
 
         // ==== drawing part ====

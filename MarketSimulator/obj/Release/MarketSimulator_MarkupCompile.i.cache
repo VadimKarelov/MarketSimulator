@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Debug\
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Release\
 MarketSimulator
 none
 false
-DEBUG;TRACE
+TRACE
 D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\App.xaml
 2-1647343458
 
-8-1200577978
+92016810486
 141183416626
 HelpWindow.xaml;MainWindow.xaml;
 
-False
+True
 

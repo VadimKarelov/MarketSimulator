@@ -21,7 +21,7 @@ namespace MarketSimulator
         // simulation parameters
         private int numberOfSellers;
         private int numberOfClients;
-        private int speed = 1;
+        private int speed = 3;
 
         // extra
         private Random rn = new Random();

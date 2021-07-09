@@ -13,3 +13,5 @@ D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Debug\MarketSi
 D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Debug\MarketSimulator.csproj.CoreCompileInputs.cache
 D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Debug\MarketSimulator.exe
 D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Debug\MarketSimulator.pdb
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Debug\HelpWindow.g.cs
+D:\Projects\C#\WPF\University\MarketSimulator\MarketSimulator\obj\Debug\HelpWindow.baml

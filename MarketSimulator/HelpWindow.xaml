@@ -1,0 +1,12 @@
+﻿<Window x:Class="MarketSimulator.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarketSimulator"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="500" Width="600" FontSize="16" Background="#FFDCFFC8">
+    <Grid>
+        <Label x:Name="label_Text" Content="" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
