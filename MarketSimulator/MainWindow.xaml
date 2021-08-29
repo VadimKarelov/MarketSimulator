@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarketSimulator"
         mc:Ignorable="d"
-        Title="Market Model" Height="700" Width="1300" FontSize="20" Background="#FFDCFFC8"
+        Title="Market Model" Height="700" Width="1350" FontSize="20" Background="#FFDCFFC8"
         Closed="Window_Closed">
     <Grid>
         <Image x:Name="image_SimulatorArea" HorizontalAlignment="Left" Height="400" Margin="0,0,0,0" VerticalAlignment="Top" Width="400" RenderTransformOrigin="-0.037,-0.048" Source="mandarin.jpg" Stretch="Fill"/>
@@ -33,8 +33,8 @@
         <Label x:Name="label_Warning" Content="Симуляция остановлена" HorizontalAlignment="Left" Margin="650,20,0,0" VerticalAlignment="Top" Background="#FFFFA200"/>
         <Label x:Name="label_InfluenceWarning" Content="Требуется остановка симуляции" HorizontalAlignment="Left" Margin="910,20,0,0" VerticalAlignment="Top" Background="#FFFFA200" Width="343"/>
 
-        <Label x:Name="label_ListOfSellers" Content="Список продавцов:" HorizontalAlignment="Left" Margin="420,140,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label x:Name="label_ListOfClients" Content="Список покупателей:" HorizontalAlignment="Left" Margin="640,140,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="label_ListOfSellers" Content="Список продавцов:" HorizontalAlignment="Left" Margin="910,240,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="label_ListOfClients" Content="Список покупателей:" HorizontalAlignment="Left" Margin="1100,240,0,0" VerticalAlignment="Top" FontSize="16"/>
         
         <Label x:Name="label_Speed" Content="Скорость" HorizontalAlignment="Left" Margin="730,70,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Slider x:Name="slider_Speed" HorizontalAlignment="Left" Margin="730,112,0,0" VerticalAlignment="Top" Value="1" Minimum="1" Width="100" ValueChanged="SliderSpeed_ValueChanged" Visibility="Hidden"/>
@@ -49,7 +49,7 @@
         
         <Rectangle HorizontalAlignment="Left" Height="212" Margin="910,20,0,0" Stroke="Black" VerticalAlignment="Top" Width="343"/>
 
-        <Button x:Name="button_Help" HorizontalAlignment="Left" Margin="1039,390,0,0" VerticalAlignment="Top" Click="HelpButton_Click" Width="100" Height="100">
+        <Button x:Name="button_Help" HorizontalAlignment="Left" Margin="1030,530,0,0" VerticalAlignment="Top" Click="HelpButton_Click" Width="100" Height="100">
             <StackPanel Orientation="Horizontal">
                 <Image Source="help.jpg" Margin="0,0,0,0" />
                 <TextBlock Text="Button"/>                
